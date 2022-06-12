@@ -33,7 +33,7 @@
       padding: 1%;
       width: 20%;
       cursor: pointer;
-      background: #0062cc;
+      background: -webkit-linear-gradient(left, #0072ff, #8811c5);
       color: #fff;
     }
 
@@ -48,44 +48,52 @@
 
 </head>
 <br><br><br>
-<!------ signup page for doctor by admin(sumit)  ---------->
 <form method="post" enctype="multipart/form-data">
   {% csrf_token %}
   <div class="container register-form">
     <div class="form">
       <div class="note">
-        <p>Admit Patient To Hospital</p>
+        <p>Admit Student To UniHealth</p>
       </div>
       <div class="form-content">
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
+              <label for="fname">First Name</label>
               {% render_field userForm.first_name class="form-control" placeholder="First Name" %}
             </div>
             <div class="form-group">
+              <label for="UserName">UserName</label>
               {% render_field userForm.username class="form-control" placeholder="Username" %}
             </div>
             <div class="form-group">
+              <label for="Address">Address</label>
               {% render_field patientForm.address class="form-control" placeholder="Address" %}
             </div>
             <div class="form-group">
+              <label for="Symptoms">Symptoms</label>
               {% render_field patientForm.symptoms class="form-control" placeholder="Symptoms" %}
             </div>
             <div class="form-group">
+              <label for="profile_picture">Profile Picture</label>
               {% render_field patientForm.profile_pic required="required" class="form-control" placeholder="Profile Picture" %}
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
+              <label for="lame">Last Name</label>
               {% render_field userForm.last_name class="form-control" placeholder="Last Name" %}
             </div>
             <div class="form-group">
+              <label for="password">Password</label>
               {% render_field userForm.password class="form-control" placeholder="Password" %}
             </div>
             <div class="form-group">
+              <label for="Contact">Contact Number</label>
               {% render_field patientForm.mobile  class="form-control" placeholder="Contact" %}
             </div>
             <div class="form-group">
+              <label for="Doctor">Doctor</label>
               {% render_field patientForm.assignedDoctorId class="form-control" placeholder="Doctor" %}
             </div>
           </div>
