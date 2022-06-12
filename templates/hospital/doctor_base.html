@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>HMS - Django</title>
+  <title>UniHealth</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,59 +26,10 @@
     a:hover {
       color: white;
     }
-
-
-
-
-    /*---------------------------------------
-       Social section
-    -----------------------------------------*/
     footer {
       padding: 0px 0px 0px 0px;
       background-color: black;
       margin: 0px;
-    }
-
-
-    #ftr {
-
-      padding: 20px;
-    }
-
-    .fa {
-
-      font-size: 23px;
-      width: 60px;
-      text-align: center;
-      text-decoration: none;
-      margin: 5px 2px;
-      border-radius: 50%;
-    }
-
-    .fa:hover {
-      opacity: 0.5;
-      text-decoration: none;
-    }
-
-    .fa-facebook {
-      background: #3B5998;
-      color: white;
-      margin-top: 30px;
-    }
-
-    .fa-whatsapp {
-      background: #25d366;
-      color: white;
-    }
-
-    .fa-twitter {
-      background: #55ACEE;
-      color: white;
-    }
-
-    .fa-instagram {
-      background: #125688;
-      color: white;
     }
 
     p {
@@ -86,12 +37,7 @@
 
     }
 
-
-
-
-
     body {
-
       padding-left: 240px;
     }
     main {
@@ -277,10 +223,8 @@
   <nav class="menu" tabindex="0">
     <div class="smartphone-menu-trigger"></div>
     <header class="avatar">
-      <img src="{% static doctor.profile_pic.url %}" alt="Profile Pic" />
-      <br><br>
       <h6>Doctor</h6>
-      <h2>{{request.user.first_name}}</h2>
+      <h2> Dr. {{request.user.first_name}}</h2>
     </header>
     <ul>
       <li tabindex="0" class="icon-dashboard"> <a style="color:white; text-decoration:none;" href="/doctor-dashboard"><span>Dashboard</span></a> </li>
@@ -292,7 +236,7 @@
     <!-- nav start -->
     <div class="bs-example">
       <nav class="navbar navbar-expand-md  navbar-dark fixed-top" style="background:#337AB7;">
-        <a href="/doctor-dashboard" class="navbar-brand">HOSPITAL MANAGEMENT</a>
+        <a href="/doctor-dashboard" class="navbar-brand">UniHealth</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -310,21 +254,7 @@
     {% block content %}
     {% endblock content %}
     <!-- content end-->
-    <br><br><br><br><br><br><br>
-    <footer>
-     
-      <br>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div style="color:#ffffff;" class="wow fadeInUp footer-copyright">
-              <p>
-                Copyright &copy; 2021 Developed By Sumit Kumar </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+
   </main>
   <!-- partial -->
 </body>
