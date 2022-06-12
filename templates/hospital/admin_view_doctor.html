@@ -23,14 +23,13 @@
 </head>
 
 <div class="container">
-  <div class="panel panel-primary">
+  <div class="panel">
     <div class="panel-heading">
       <h6 class="panel-title">Doctors</h6>
     </div>
-    <table class="table table-hover" id="dev-table">
+    <table class="table">
       <thead>
         <tr>
-
           <th>Name</th>
           <th>Profile Picture</th>
           <th>Contact</th>
@@ -48,8 +47,8 @@
         <td>{{d.mobile}}</td>
         <td>{{d.address}}</td>
         <td>{{d.department}}</td>
-        <td><a class="btn btn-primary btn-xs" href="{% url 'update-doctor' d.id  %}"><span class="glyphicon glyphicon-edit"></span></a></td>
-        <td><a class="btn btn-danger btn-xs" href="{% url 'delete-doctor-from-hospital' d.id  %}"><span class="glyphicon glyphicon-trash"></span></a></td>
+        <td><a class="btn btn-info btn-md" href="{% url 'update-doctor' d.id  %}">Edit</a></td>
+        <td><a class="btn btn-danger btn-md" href="{% url 'delete-doctor-from-hospital' d.id  %}">Delete</a></td>
       </tr>
       {% endfor %}
     </table>

@@ -4,7 +4,7 @@
 
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
+  <!-- <style>
     .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       max-width: 300px;
@@ -49,11 +49,26 @@
     a {
       color: white;
     }
+  </style> -->
+  <style>
+    ul li{
+      text-decoration: none;
+    }
+    a{
+      color: inherit;
+    }
+    li{
+      list-style-type: none;
+    }
+    .footer{
+      padding: 3%;
+      background-color: lightgray;
+    }
   </style>
 </head>
 
 <body>
-  <div class="grid-container">
+  <!-- <div class="grid-container">
     <div class="col-md-6">
       <div class="card">
         <img src="{% static "images/doctor.png" %}" alt="John" style="width:100%">
@@ -68,7 +83,26 @@
         <p><button><a href="/patientclick">Login / SignIn</a></button></p>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <p class="display-4">UniHealth</p>
+          <p>UniHealth is a online platform where you can achieve the facilities which is there in a Hospital</p>
+        </div>
+        <div class="col-md-4">
+          <ul>
+            <li><a href="/adminclick" class="nav-item nav-link">Admin</a></li>
+            <li><a href="/doctorclick" class="nav-item nav-link">Doctor</a></li>
+            <li><a href="/patientclick" class="nav-item nav-link">Student</a></li>
+            <li><a href="/aboutus" class="nav-item nav-link">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
