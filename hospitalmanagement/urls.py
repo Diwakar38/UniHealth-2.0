@@ -51,9 +51,6 @@ urlpatterns = [
     path('admin-approve-patient', views.admin_approve_patient_view,name='admin-approve-patient'),
     path('approve-patient/<int:pk>', views.approve_patient_view,name='approve-patient'),
     path('reject-patient/<int:pk>', views.reject_patient_view,name='reject-patient'),
-    path('admin-discharge-patient', views.admin_discharge_patient_view,name='admin-discharge-patient'),
-    path('discharge-patient/<int:pk>', views.discharge_patient_view,name='discharge-patient'),
-    path('download-pdf/<int:pk>', views.download_pdf_view,name='download-pdf'),
 
 
     path('admin-appointment', views.admin_appointment_view,name='admin-appointment'),
@@ -71,7 +68,6 @@ urlpatterns +=[
 
     path('doctor-patient', views.doctor_patient_view,name='doctor-patient'),
     path('doctor-view-patient', views.doctor_view_patient_view,name='doctor-view-patient'),
-    path('doctor-view-discharge-patient',views.doctor_view_discharge_patient_view,name='doctor-view-discharge-patient'),
 
     path('doctor-appointment', views.doctor_appointment_view,name='doctor-appointment'),
     path('doctor-view-appointment', views.doctor_view_appointment_view,name='doctor-view-appointment'),
@@ -89,10 +85,5 @@ urlpatterns +=[
     path('patient-appointment', views.patient_appointment_view,name='patient-appointment'),
     path('patient-book-appointment', views.patient_book_appointment_view,name='patient-book-appointment'),
     path('patient-view-appointment', views.patient_view_appointment_view,name='patient-view-appointment'),
-    path('patient-discharge', views.patient_discharge_view,name='patient-discharge'),
 
 ]
-
-#Developed By : sumit kumar
-#facebook : fb.com/sumit.luv
-#Youtube :youtube.com/lazycoders
